@@ -1,13 +1,12 @@
 public class Pessoa {
 
 	double valor;
-	int cpf;
 	String nome;
 	int chavepix;
 	double total;
 
 	boolean transferir(double valor, Pessoa pessoa) {
-		if (pessoa.valor <  pessoa.total) {
+		if (pessoa.valor < pessoa.total) {
 			System.out.println("saldo insuficiente");
 			return false;
 		} else {
@@ -23,6 +22,6 @@ public class Pessoa {
 	void receber(double valor) {
 		this.total += valor;
 		System.out.println(nome + " recebe " + valor + "R$");
-		System.out.println(nome +" seu saldo total é de " + total);
+		System.out.println(nome + " seu saldo total é de " + total);
 	}
 }
