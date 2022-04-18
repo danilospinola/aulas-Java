@@ -13,7 +13,7 @@ public class Calcular {
 		int Quadrado = areas.calculararea(x);
 		System.out.println("resultado do quadrado é igual a : " + Quadrado);
 
-		System.out.println("digite a altura para calcular o r triangulo");
+		System.out.println("digite a altura para calcular o  triangulo");
 		int y = scanner.nextInt();
 
 		int triangulo = areas.calculararea(x, y);
