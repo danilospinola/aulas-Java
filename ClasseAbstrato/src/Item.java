@@ -1,22 +1,22 @@
 
 public abstract class Item {
 	
-	private int posx;
-	private int posy;
+	private int posX;
+	private int posY;
 	
 	public abstract void pegar();
 	
 	//getter e setter
-	public int getPosx() {
-		return posx;
+	public int getPosX() {
+		return posX;
 	}
-	public void setPosx(int posx) {
-		this.posx = posx;
+	public void setPosX(int posX) {
+		this.posX = posX;
 	}
-	public int getPosy() {
-		return posy;
+	public int getPosY() {
+		return posY;
 	}
-	public void setPosy(int posy) {
-		this.posy = posy;
+	public void setPosY(int posY) {
+		this.posY = posY;
 	}
 }
