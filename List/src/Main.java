@@ -20,7 +20,7 @@ public class Main {
 
 		}
 
-		lista.add(0, "def");
+		lista.add(0,"def");
 		for (Object valor : lista) { // valor do tipo object pois na lista não tem apenas um tipo de dado.
 			System.out.println(valor); // Mostra o valor da lista no console
 		}
