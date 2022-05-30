@@ -6,16 +6,16 @@ import java.util.List;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException{//Joga uma declaração de exceção
+	public static void main(String[] args) throws IOException{//Joga uma declaraï¿½ï¿½o de exceï¿½ï¿½o
 
 //		String s = "texto para ser gravado no arquivo."; //
 //
 //		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("saida.txt"))) {
 //
-//			// Try faz com que o erro de entrada e saida de dados não será obrigatoriamente tratado 
+//			// Try faz com que o erro de entrada e saida de dados nï¿½o serï¿½ obrigatoriamente tratado 
 //
 //			// Classe buffered que se resume em uma pequena memoria
-//			// temporaria que será utilizada para fazer a escrita desse exemplo
+//			// temporaria que serï¿½ utilizada para fazer a escrita desse exemplo
 //
 //			// Fliewriter escreve o nome do arquivo
 //
@@ -27,7 +27,7 @@ public class Main {
 			Mouse mouse1 = new Mouse(true, 5, "Pequeno"); 
 			listaMouse.add(mouse1);
 			
-			Mouse mouse2 = new Mouse(true, 5, "Médio"); 
+			Mouse mouse2 = new Mouse(true, 5, "Medio"); 
 			listaMouse.add(mouse2);
 
 			
@@ -37,7 +37,7 @@ public class Main {
 				
 				try (BufferedWriter escrever = new BufferedWriter(new FileWriter("Mouses.txt"))) {
 					for (Mouse mouse : listaMouse) 
-						escrever.write(mouse.toString()); // to string para "rodar" a lista de mouses que contem as informações de cada mouse.
+						escrever.write(mouse.toString()); // to string para "rodar" a lista de mouses que contem as informaï¿½ï¿½es de cada mouse.
 				}
 				
 
