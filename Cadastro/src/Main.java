@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -25,14 +29,14 @@ public class Main {
 		System.out.println("Digite sua idade: ");
 		pessoa.setIdade(teclado.nextInt());
 		
-		System.out.println("Digite a rua do seu endereço");
+		System.out.println("Digite a rua do seu endereco");
 		pessoa.getEndereco().setRua(teclado.next());
 		
 		
-		System.out.println("Digite o numero do seu endereço");
+		System.out.println("Digite o numero do seu endereco");
 		pessoa.getEndereco().setNumero(teclado.nextInt());
 		
-		System.out.println("Digite o bairro do seu endereço");
+		System.out.println("Digite o bairro do seu endereco");
 		pessoa.getEndereco().setBairro(teclado.next());
 		
 		System.out.println("Digite 1 para o sexo Masculino e Digite 2 para o sexo feminino");
@@ -47,7 +51,32 @@ public class Main {
 		
 		listaPessoas.add(pessoa);
 		}
+		
+
+
+		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("Pessoas.txt"))) {
+			for (Pessoa pessoa2 : listaPessoas)
+				escrever.write(pessoa2.toString()); // to string para "rodar" a lista de mouses que contem as informaï¿½ï¿½es
+													// de cada mouse.
+		}
+
+		List<Pessoa> ListaPesoas2 = new ArrayList<Pessoa>();
+
+		try (BufferedReader reader = new BufferedReader(new FileReader("Pessoas.txt"))) {
+			String line;
+			String string = "";
+
+			while ((line = reader.readLine()) != null) {
+				string += line + "\n";
+			}
+
+		}
+		for (Pessoa pessoa2 : ListaPesoas2) {
+			System.out.println(pessoa2);
+		}
+		
+		
+		
 		System.out.println(listaPessoas);
 	}
-
 }

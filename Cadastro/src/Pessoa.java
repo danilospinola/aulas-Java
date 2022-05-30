@@ -51,6 +51,18 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Pessoa [nome = " + nome + ", Idade = " + idade + ", endereco = "+ endereco + " ,sexo = " + sexo +"]";
+		return "Pessoa nome = " + nome + ", Idade = " + idade + ", endereco = "+ endereco + " ,sexo = " + sexo ;
+	}
+	
+	public Pessoa(String texto) {
+		String[] arrayAuxiliar1 = texto.split(",");
+		String[] arrayAuxiliar2 = arrayAuxiliar1[0].split("=");
+		this.nome = arrayAuxiliar2[1].trim();
+		
+		String[] arrayAuxiliar3 = arrayAuxiliar1[1].split("=");
+		this.idade = arrayAuxiliar3[1].trim();
+		
+		String[] arrayAuxiliar4 = arrayAuxiliar1[2].split("=");
+		this.endereco = arrayAuxiliar4[1].trim();
 	}
 }
