@@ -38,12 +38,18 @@ public class Main {
 
 			System.out.println("Digite 1 para o sexo Masculino e Digite 2 para o sexo feminino");
 
-			if (teclado.nextInt() == 1) {
-				pessoa.setSexo(Sexo.MASCULINO);
-			} else {
-				pessoa.setSexo(Sexo.FEMININO);
+			int opcao = 0;
+			while (opcao != 1 && opcao != 2) {
+				opcao = teclado.nextInt();
+				if (opcao == 1) {
+					pessoa.setSexo(Sexo.MASCULINO);
+				} else if (opcao == 2) {
+					pessoa.setSexo(Sexo.FEMININO);
+				} else {
+					System.out.println("opcao invalida, digite novamente");
+					System.out.println("Digite 1 para o sexo Masculino e Digite 2 para o sexo feminino");
+				}
 			}
-
 			listaPessoas.add(pessoa);
 		}
 
@@ -61,12 +67,12 @@ public class Main {
 
 			while ((line = reader.readLine()) != null) {
 				Pessoa pessoa = new Pessoa(line);
+
 				ListaPessoas2.add(pessoa);
+
 			}
 
 		}
-	
-				
-				System.out.println(ListaPessoas2);
+		System.out.println(ListaPessoas2);
 	}
 }
