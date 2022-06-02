@@ -61,11 +61,12 @@ public class Main {
 
 			while ((line = reader.readLine()) != null) {
 				Pessoa pessoa = new Pessoa(line);
-				
 				ListaPessoas2.add(pessoa);
-				System.out.println(ListaPessoas2);
 			}
 
 		}
+	
+				
+				System.out.println(ListaPessoas2);
 	}
 }
