@@ -6,6 +6,24 @@ public class Endereco {
 	private String bairro;
 	
 	
+	
+	public Endereco(String[] ArrayLine) {
+		
+		String[] ArrayRua = ArrayLine[3].split("=");
+		this.rua = ArrayRua[1].trim();
+				
+		String[] ArrayNumero = ArrayLine[4].split("=");
+		this.numero = Integer.parseInt(ArrayNumero[1].trim());
+		
+		String[] ArrayBairro = ArrayLine[5].split("=");
+		this.bairro = ArrayBairro[1].trim();
+	}
+
+	public Endereco() {
+		
+	}
+	
+
 	public String getRua() {
 		return rua;
 	}
@@ -33,6 +51,12 @@ public class Endereco {
 	
 	public void setBairro(String bairro) {
 		this.bairro = bairro;
+	}
+
+
+	@Override
+	public String toString() {
+		return ", Rua=" + rua + ", Numero=" + numero + ", Bairro=" + bairro ;
 	}
 	
 	

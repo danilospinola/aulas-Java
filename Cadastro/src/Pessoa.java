@@ -8,6 +8,28 @@ public class Pessoa {
 	
 	
 	
+
+
+	public Pessoa(String line) {
+	String[] ArrayLine = line.split(","); 
+
+	String[] ArrayNome = ArrayLine[0].split("=");
+	this.nome = ArrayNome[1].trim();
+	
+	String[] ArrayIdade = ArrayLine[1].split("=");
+	this.idade = Integer.parseInt(ArrayIdade[1].trim());
+	
+	String[] ArraySexo = ArrayLine[2].split("=");
+	this.sexo = Sexo.valueOf(ArraySexo[1].trim());
+	
+	Endereco endereco = new Endereco(ArrayLine);
+	
+	this.endereco = endereco;
+	}
+	
+	public Pessoa() {
+		
+	}
 	// <------------------------------Getter e Setter--------------------------------------->
 	public String getNome() {
 		return nome;
@@ -24,16 +46,6 @@ public class Pessoa {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-
-	
-
-	public Endereco getEndereco() {
-		return endereco;
-	}
-	
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
-	}
 	
 	
 	public Sexo getSexo() {
@@ -43,7 +55,14 @@ public class Pessoa {
 	public void setSexo(Sexo sexo) {
 		this.sexo = sexo;
 	}
-
+	
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
 	
 	// <------------------------------Getter e Setter--------------------------------------->
 	
@@ -51,18 +70,8 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Pessoa nome = " + nome + ", Idade = " + idade + ", endereco = "+ endereco + " ,sexo = " + sexo ;
+		return "Pessoa nome = " + nome + ", Idade = " + idade + " ,sexo = " + sexo + endereco +"\n";
 	}
 	
-	public Pessoa(String texto) {
-		String[] arrayAuxiliar1 = texto.split(",");
-		String[] arrayAuxiliar2 = arrayAuxiliar1[0].split("=");
-		this.nome = arrayAuxiliar2[1].trim();
-		
-		String[] arrayAuxiliar3 = arrayAuxiliar1[1].split("=");
-		this.idade = arrayAuxiliar3[1].trim();
-		
-		String[] arrayAuxiliar4 = arrayAuxiliar1[2].split("=");
-		this.endereco = arrayAuxiliar4[1].trim();
-	}
+
 }
