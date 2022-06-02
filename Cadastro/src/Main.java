@@ -15,7 +15,7 @@ public class Main {
 
 		Scanner teclado = new Scanner(System.in);
 
-		for (int x = 0; x < 1; x++) {
+		for (int x = 0; x < 4; x++) {
 
 			Pessoa pessoa = new Pessoa();
 
