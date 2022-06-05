@@ -2,7 +2,7 @@
 public abstract class Item {
 	
 	
-	//Atributos obrigatorios
+	//Atributos que podem ser herdados de item.
 	private int posX;	
 	private int posY;
 	
