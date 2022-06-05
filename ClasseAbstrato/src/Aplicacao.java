@@ -4,9 +4,9 @@ public class Aplicacao {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//Item item = new Item(); Classe abstratas n„o s„o instanciadas 
+		//Item item = new Item(); Classe abstratas n√£o s√£o instanciadas 
 		
-		Item item = new Cogumelo ();
+		Item item = new Cogumelo (); //Inst√¢ncia um cogumelo e guarda na varivavel item
 		item.pegar();
 		
 		item = new Moeda();
