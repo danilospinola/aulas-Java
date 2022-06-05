@@ -9,15 +9,15 @@ public class Contador {
 //	}
 
 	static {
-		valor = 1;
+		valor = 1; //Mostra que valor sempre começa em 1
 	}
 
-	public static void	incrementar() {
+	public static void	incrementar() { // Toda vez que o metodo é utilizado aumenta +1 no valor
 		valor++;
 
 	}
 	
-
+//<------------------------------GETTER E SETTTER --------------------------------------->
 public static int getValor() {
 		return valor;
 	}
@@ -25,6 +25,6 @@ public static int getValor() {
 public void setValor(int valor) {
 		this.valor = valor;
 	}
-	
+//<------------------------------GETTER E SETTTER --------------------------------------->	
 	
 }
