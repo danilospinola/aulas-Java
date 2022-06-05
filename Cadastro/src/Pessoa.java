@@ -8,23 +8,23 @@ public class Pessoa {
 	
 	
 	
+	//Obs: o metodo split quando divide, a primeira parte será 0 e a outra será 1; porém conforme ocorre as divisões os numeros irão aumentar gradativamente.
 
+	public Pessoa(String line) { 
+	String[] ArrayLine = line.split(","); // faz split(repartição de variavel) da variavel line a partir da (",") 
 
-	public Pessoa(String line) {
-	String[] ArrayLine = line.split(","); 
-
-	String[] ArrayNome = ArrayLine[0].split("=");
-	this.nome = ArrayNome[1].trim();
+	String[] ArrayNome = ArrayLine[0].split("=");  // faz split(repartição de variavel em duas partes) da variavel line a partir do ("=") e guarda na variavel ArrayNome
+	this.nome = ArrayNome[1].trim(); // Retira os espacos da variavel ArrayNome e guarda no atributo nome.
 	
-	String[] ArrayIdade = ArrayLine[1].split("=");
-	this.idade = Integer.parseInt(ArrayIdade[1].trim());
+	String[] ArrayIdade = ArrayLine[1].split("="); // faz split 1° parte da variavel line a partir do ("=") e guarda na variavel ArrayIdade
+	this.idade = Integer.parseInt(ArrayIdade[1].trim()); // Retira os espacos da variavel ArrayIdade e guarda no atributo idade.
 	
 	String[] ArraySexo = ArrayLine[2].split("=");
-	this.sexo = Sexo.valueOf(ArraySexo[1].trim());
+	this.sexo = Sexo.valueOf(ArraySexo[1].trim()); // Retira os espacos da variavel ArraySexo e guarda no atributo sexo.
 	
-	Endereco endereco = new Endereco(ArrayLine);
+	Endereco endereco = new Endereco(ArrayLine); // Instância um ArrayLine na variavel endereco
 	
-	this.endereco = endereco;
+	this.endereco = endereco; //A variavel endereco é igual ao atributo endereco
 	}
 	
 	public Pessoa() {
@@ -70,7 +70,7 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Pessoa nome = " + nome + ", Idade = " + idade + " ,sexo = " + sexo + endereco +"\n";
+		return "Pessoa nome = " + nome + ", Idade = " + idade + " ,sexo = " + sexo + endereco +"\n"; //Override do to String
 	}
 	
 
