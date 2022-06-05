@@ -1,5 +1,5 @@
 
-public class mÈdia {
+public class m√©dia {
 
 	public static void main(String[] args) {
 
@@ -11,9 +11,9 @@ int peso1 = 3;
 int peso2 = 2;
 int peso3 = 5;
 
-double mÈdia = (nota1*peso1) + (nota2*peso2) + (peso3*nota3) ;
+double m√©dia = (nota1*peso1) + (nota2*peso2) + (peso3*nota3) ; // Calcula  a m√©dia com peso e guarda na variavel m√©dia
 
-System.out.println("a mÈdia È de: " + mÈdia/10);
+System.out.println("a m√©dia √© de: " + m√©dia/10); // Divide a m√©dia por 10 antes de mostrar
 		
 		
 	}
