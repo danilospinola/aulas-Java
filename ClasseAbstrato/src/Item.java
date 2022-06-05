@@ -1,9 +1,12 @@
 
 public abstract class Item {
 	
-	private int posX;
+	
+	//Atributos obrigatorios
+	private int posX;	
 	private int posY;
 	
+	//metodos obrigatorios
 	public abstract void pegar();
 	
 	//getter e setter
@@ -19,4 +22,6 @@ public abstract class Item {
 	public void setPosY(int posY) {
 		this.posY = posY;
 	}
+	
+	//getter e setter
 }
