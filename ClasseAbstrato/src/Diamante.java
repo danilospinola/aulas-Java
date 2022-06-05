@@ -1,8 +1,8 @@
 
 public class Diamante extends Item{
 
-	@Override //Faz override do metodo pegar
-	public void pegar() {
+	@Override 
+	public void pegar() {	// Faz override do metodo obrigatorio pegar 
 		System.out.println("Pegar Diamante");
 	}
 
