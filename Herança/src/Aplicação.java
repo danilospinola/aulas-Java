@@ -1,5 +1,5 @@
 
-public class AplicaÁ„o {
+public class Aplica√ß√£o {
 
 	public static void main(String[] args) {
 		Veiculo veiculo = new Veiculo();
@@ -9,8 +9,8 @@ public class AplicaÁ„o {
 		veiculo.setNome("HB20");
 		veiculo.setModelo("750X");
 		
-		veiculo.imprimir();
-		veiculo.buzinar();
+		veiculo.imprimir(); //M√©todo imprimir de veiculo
+		veiculo.buzinar();  //M√©todo buzinar de veiculo
 	
 	System.out.println("\n------------------------------------------------------------------\n");	
 		Carro carro = new Carro();
@@ -21,21 +21,21 @@ public class AplicaÁ„o {
 		carro.setModelo("Pallet");
 		carro.setQuatroPortas(true);
 		
-		carro.imprimir();
-		carro.buzinar();
+		carro.imprimir(); //M√©todo imprimir de carro
+		carro.buzinar(); //M√©todo buzinar de carro
 		
 		System.out.println("\n------------------------------------------------------------------\n");	
 		
-		Caminh„o caminh„o = new Caminh„o();
+		Caminh√£o caminh√£o = new Caminh√£o();
 		
-		caminh„o.setMarca("Mercedes");
-		caminh„o.setAno(2018);
-		caminh„o.setNome("AviadorX");
-		caminh„o.setModelo("XLM80");
-		caminh„o.setPesoCarga(450);
+		caminh√£o.setMarca("Mercedes");
+		caminh√£o.setAno(2018);
+		caminh√£o.setNome("AviadorX");
+		caminh√£o.setModelo("XLM80");
+		caminh√£o.setPesoCarga(450);
 		
-		caminh„o.imprimir();
-		caminh„o.buzinar();
+		caminh√£o.imprimir(); //M√©todo imprimir de caminh√£o
+		caminh√£o.buzinar(); //M√©todo buzinar de caminh√£o
 		System.out.println("\n------------------------------------------------------------------\n");	
 		
 		Moto moto = new Moto();
@@ -45,8 +45,8 @@ public class AplicaÁ„o {
 		moto.setNome("Falcon5");
 		moto.setModelo("Aviador");
 		
-		moto.imprimir();
-		moto.buzinar();
+		moto.imprimir(); //M√©todo imprimir de moto
+		moto.buzinar(); //M√©todo buzinar de moto
 	}
 
 }
