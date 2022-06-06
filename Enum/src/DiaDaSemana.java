@@ -13,6 +13,7 @@ public enum DiaDaSemana {
 	
 	private int num;
 
+//<----------------------------Getters e setters----------------------------------->
 	private DiaDaSemana(int num) {
 		this.num = num;
 	}
@@ -20,6 +21,6 @@ public enum DiaDaSemana {
 	public int getNum() {
 		return num;
 	}
-	
+//<----------------------------Getters e setters----------------------------------->	
 	
 }
