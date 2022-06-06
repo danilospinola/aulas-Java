@@ -9,13 +9,16 @@ public class Calculadora {
  double resuldiv;
  double resulmut;
 	
- resulso = n1 + n2;
- 	System.out.println("Resultado da soma È : "+resulso);
- resulsu = n1 - n2;
- 	System.out.println("Resultado da subtraÁ„o È : "+resulsu);
- resuldiv = n1 / n2;
- 	System.out.println("Resultado da divis„o È : "+resuldiv);
- resulmut = n1 * n2;
- 	System.out.println("Resultado da mutiplicaÁ„o È : "+resulmut);
+ resulso = n1 + n2; //Soma 2 numeros e guarda na variavel resulso
+ 	System.out.println("Resultado da soma √© : "+resulso);
+		
+ resulsu = n1 - n2;//subtrai 2 numeros e guarda na variavel resulsu
+ 	System.out.println("Resultado da subtra√ß√£o √© : "+resulsu);
+		
+ resuldiv = n1 / n2;//Divide 2 numeros e guarda na variavel resuldiv
+ 	System.out.println("Resultado da divis√£o √© : "+resuldiv);
+		
+ resulmut = n1 * n2;//Mutiplica 2 numeros e guarda na variavel resulmut
+ 	System.out.println("Resultado da mutiplica√ß√£o √© : "+resulmut);
 	}
 }	
