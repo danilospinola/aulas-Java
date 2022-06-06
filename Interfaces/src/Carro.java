@@ -1,5 +1,5 @@
 
-public interface Carro extends Automovel {
+public interface Carro extends Automovel { // Mostra 
 
-	public void AbrirPorta();
+	public void AbrirPorta(); //Método próprio da classe abrir porta.
 }
