@@ -1,7 +1,7 @@
 
-public interface ItemCaro {
+public interface ItemCaro { 
 	
 	
-	double getPreco();
+	double getPreco(); // Método que retorna um double.
 	
 }
