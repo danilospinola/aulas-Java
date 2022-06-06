@@ -45,7 +45,7 @@ public class Cliente {
 		return Objects.hash(cpf, nome, numConta);
 	}
 
-	@Override
+	@Override // Método equals que compara 2 objetos, nesse caso compara os atributos de 2 contas.
 	public boolean equals(Object obj) { 
 		if (this == obj)
 			return true;
