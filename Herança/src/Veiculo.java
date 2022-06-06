@@ -7,17 +7,17 @@ public class Veiculo {
 	protected int ano;
 	
 	
-	public void buzinar(){
+	public void buzinar(){ //método buzinar que tem retorno vazio
 		System.out.println("BI BI");
 		
 	}
 	
-	public void imprimir () {
-		System.out.println("Nome: " + nome + "\nMarca: " + marca +"\nModelo: "+ modelo + "\nAno: " + ano );
+	public void imprimir () {//método imprimir que tem retorno vazio
+		System.out.println("Nome: " + nome + "\nMarca: " + marca +"\nModelo: "+ modelo + "\nAno: " + ano ); //Syso que mostra todas as caracteristicas
 	}
 
 	
-	
+	//<----------------------------Getters e setters----------------------------------->
 	public String getNome() {
 		return nome;
 	}
@@ -49,6 +49,6 @@ public class Veiculo {
 	public void setAno(int ano) {
 		this.ano = ano;
 	}
-	
+	//<----------------------------Getters e setters----------------------------------->
 	
 }
