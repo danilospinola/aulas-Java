@@ -1,25 +1,23 @@
 
-public class Caminh„o extends Veiculo {
+public class CaminhƒÉo extends Veiculo {
 
-	int pesoCarga;
+	int pesoCarga; //Atributo proprio da subclasse.
 
-	@Override
-	public void imprimir() {
-		// TODO Auto-generated method stub
-		super.imprimir();
-		System.out.println("A carga È de: " + pesoCarga);
+	@Override //Override do m√©todo imprimir da subclasse 
+	public void imprimir() { 
+		super.imprimir(); //Usa o metodo imprimir da subclasse
+		System.out.println("A carga √© de: " + pesoCarga); //Mostra a carga do caminh√£o no console
 	}
 
 	
 	
-	@Override
+	@Override //Override do metodo buzinar da superclasse
 	public void buzinar() {
-		// TODO Auto-generated method stub
 		System.out.println("FOM FOM");
 	}
 
 
-
+	//<-----------------------------------Getters e setters----------------------------------->
 	public int getPesoCarga() {
 		return pesoCarga;
 	}
@@ -27,5 +25,5 @@ public class Caminh„o extends Veiculo {
 	public void setPesoCarga(int pesoCarga) {
 		this.pesoCarga = pesoCarga;
 	}
-
+	//<-----------------------------------Getters e setters----------------------------------->
 }
