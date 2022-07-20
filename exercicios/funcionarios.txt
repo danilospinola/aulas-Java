@@ -1,0 +1,1 @@
+Funcionario [nome=a, salario=100.0]Funcionario [nome=b, salario=500.0]
